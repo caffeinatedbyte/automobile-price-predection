@@ -10,13 +10,13 @@ st.title("Automobile data case study")
 #numeric data
 symbolizing=[-2,-1,0,1,2,3]
 sym=st.selectbox('Symbolic',symbolizing,index=symbolizing.index(-2))
-nl=st.number_input('Normalsed losses',value=0,step=1)
-w=st.number_input('Width',format='%d',value=0,step=1)   
-h=st.number_input('Height',format='%d',value=0,step=1)
-es=st.number_input('Engine Size',format='%d',value=0,step=1)#integer
-hp=st.number_input('Horse power',format='%d',value=0,step=1)#integer
-cm=st.number_input('City Milage',format='%d',value=0,step=1)
-hm=st.number_input('Highway Milage',format='%d',value=0,step=1)
+nl=st.number_input('Noarmalised losses',value=0,step=1)
+w=st.number_input('Width (mm)',format='%d',value=0,step=1)   
+h=st.number_input('Height (mm)',format='%d',value=0,step=1)
+es=st.number_input('Engine Size (cc)',format='%d',value=0,step=1)#integer
+hp=st.number_input('Horse power (bhp)',format='%d',value=0,step=1)#integer
+cm=st.number_input('City Mileage (km/l)',format='%d',value=0,step=1)
+hm=st.number_input('Highway Mileage (km/l)',format='%d',value=0,step=1)
 
 #string Data
 brand=['alfa-romero', 'audi', 'bmw', 'chevrolet', 'dodge', 'honda',
@@ -24,8 +24,8 @@ brand=['alfa-romero', 'audi', 'bmw', 'chevrolet', 'dodge', 'honda',
        'mitsubishi', 'nissan', 'peugot', 'plymouth', 'porsche', 'renault',
        'saab', 'subaru', 'toyota', 'volkswagen', 'volvo']
 make=st.selectbox('Select car brand',brand,index=brand.index('alfa-romero'))#object type
-fuel=['gas', 'diesel']
-ft=st.selectbox('Select fuel type',fuel,index=fuel.index('gas'))#object type
+fuel=['petrol', 'diesel']
+ft=st.selectbox('Select fuel type',fuel,index=fuel.index('petrol'))#object type
 body=['convertible', 'hatchback', 'sedan', 'wagon', 'hardtop']
 bs=st.selectbox('Body Style',body,index=body.index('convertible'))#object type
 drive=['rwd', 'fwd', '4wd']
