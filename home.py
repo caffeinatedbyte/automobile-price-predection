@@ -6,8 +6,6 @@ with warnings.catch_warnings():
     warnings.filterwarnings("ignore", category=DeprecationWarning)
 import pickle
 st.title("Automobile data case study")
-st.write("## Automobile price prediction")
-st.image("A.png")
 #To accept data from user 
 #numeric data
 symbolizing=[-2,-1,0,1,2,3]
