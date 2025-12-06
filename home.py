@@ -24,8 +24,8 @@ brand=['alfa-romero', 'audi', 'bmw', 'chevrolet', 'dodge', 'honda',
        'mitsubishi', 'nissan', 'peugot', 'plymouth', 'porsche', 'renault',
        'saab', 'subaru', 'toyota', 'volkswagen', 'volvo']
 make=st.selectbox('Select car brand',brand,index=brand.index('alfa-romero'))#object type
-fuel=['petrol', 'diesel']
-ft=st.selectbox('Select fuel type',fuel,index=fuel.index('petrol'))#object type
+fuel=['gas', 'diesel']
+ft=st.selectbox('Select fuel type',fuel,index=fuel.index('gas'))#object type
 body=['convertible', 'hatchback', 'sedan', 'wagon', 'hardtop']
 bs=st.selectbox('Body Style',body,index=body.index('convertible'))#object type
 drive=['rwd', 'fwd', '4wd']
