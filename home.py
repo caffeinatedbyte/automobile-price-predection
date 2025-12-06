@@ -11,8 +11,8 @@ st.title("Automobile data case study")
 symbolizing=[-2,-1,0,1,2,3]
 sym=st.selectbox('Symbolic',symbolizing,index=symbolizing.index(-2))
 nl=st.number_input('Normalised losses',value=0,step=1)
-w=st.number_input('Width (mm)',format='%d',value=0,step=1)   
-h=st.number_input('Height (mm)',format='%d',value=0,step=1)
+w=st.number_input('Width',format='%d',value=0,step=1)   
+h=st.number_input('Height',format='%d',value=0,step=1)
 es=st.number_input('Engine Size (cc)',format='%d',value=0,step=1)#integer
 hp=st.number_input('Horse power (bhp)',format='%d',value=0,step=1)#integer
 cm=st.number_input('City Mileage (km/l)',format='%d',value=0,step=1)
